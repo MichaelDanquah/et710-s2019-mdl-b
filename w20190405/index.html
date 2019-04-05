@@ -5,36 +5,45 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ET-710</title>
+    <!-- *Begin AnuglarJS -->
+              <script src="js/vendor/angular-1.7.8/angular.min.js"></script>
+              <script src="js/vendor/angular-1.7.8/angular-animate.min.js"></script>
+              <script src="js/vendor/angular-1.7.8/angular-route.min.js"></script>
+          <!-- *End AnuglarJS -->
+
+          <!-- *Begin Datatables.net -->
+            <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/zf/dt-1.10.18/datatables.min.css"/>
+            <script type="text/javascript" src="https://cdn.datatables.net/v/zf/dt-1.10.18/datatables.min.js"></script>
+          <!-- *End Datatables.net -->
+
+          <!-- *Begin Font Awesome
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+          -->
+          <!-- The font Awesome code below is several revisions back.
+                https://stackoverflow.com/questions/14698589/fontawesome-not-available-as-a-font-family
+                I discovered that it would work from an article on stack overflow.  all code should at some point be updated to relfect the last calling syntax for font awesome
+              -->
+              <link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+          <!-- *End Font Awesome -->
+
+
+
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/subnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/social.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link rel="stylesheet" href="css/parallax.css">
+
   </head>
   <body>
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <h1>Welcome to Foundation</h1>
-        </div>
-      </div>
-<!--Begin Angular Js-->
- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
-<!--End Angular Js-->
-
-<!--Begin DataTables.net-->
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/zf/dt-1.10.18/datatables.min.css"/>
-   <script type="text/javascript" src="https://cdn.datatables.net/v/zf/dt-1.10.18/datatables.min.js"></script>
-<!--End DataTables.net-->
-
-<!-- *Begin Font Awesome
-           <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-         -->
-         <!-- The font Awesome code below is several revisions back.
-               https://stackoverflow.com/questions/14698589/fontawesome-not-available-as-a-font-family
-               I discovered that it would work from an article on stack overflow.  all code should at some point be updated to relfect the last calling syntax for font awesome
-             -->
-             <link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
-         <!-- *End Font Awesome -->
-
-  <!--Begin Nav-->
+      <!-- *Begin Nav -->
   <div data-sticky-container>
   <div class="sticky" data-sticky data-margin-top="0">
       <nav class="top-bar topbar-responsive">
@@ -60,16 +69,23 @@
       </div>
     </div>
   </nav>
-  <!--End Nav-->
+  </div>
+  </div>
 
-  <!--Begin SubNav-->
-  <!--End SubNav-->
 
-  <!--Begin Header-->
-  <!--End Header-->
+      <!-- *End Nav -->
 
-  <!--Begin Content-->
-  <div ng-view></div>
+      <!-- *Begin SubNav -->
+      <!-- *End SubNav -->
+
+
+      <!-- *Begin Header -->
+
+      <!-- *End Header -->
+
+
+      <!-- *Begin Content -->
+      <div ng-view></div>
       <!-- *Begin AngularJS -->
       <!-- *Begin Socials -->
       <div class="rounded-social-buttons">
@@ -86,6 +102,8 @@
       <!-- *End Socials -->
       <!-- *End AngularJS -->
       <!-- *End Content -->
+
+
 
 
       <!-- *Begin Footer -->
@@ -162,11 +180,14 @@
             <!-- *End Footer -->
 
 
+      <script src="js/vendor/jquery.js"></script>
+      <script src="js/vendor/what-input.js"></script>
+      <script src="js/vendor/foundation.js"></script>
+      <script src="js/app.js"></script>
 
+      <script src="js/spa.js"></script>
+      <!-- Controllers -->
+      <script src="js/controllers/MainController.js"></script>
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+    </body>
 </html>
